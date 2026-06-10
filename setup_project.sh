@@ -107,3 +107,11 @@ cat > "$folder/Helpers/config.json" << 'END'
     "total_sessions": 15
 }
 END
+
+# makes the reports.log file
+echo "Making the reports.log file"
+cat > "$folder/reports/reports.log" << 'END'
+--- Attendance Report Run: 2026-02-06 18:10:01.468726 ---
+[2026-02-06 18:10:01.469363] ALERT SENT TO bob@example.com: URGENT: Bob Smith, your attendance is 46.7%. You will fail this class.
+[2026-02-06 18:10:01.469424] ALERT SENT TO charlie@example.com: URGENT: Charlie Davis, your attendance is 26.7%. You will fail this class.
+END

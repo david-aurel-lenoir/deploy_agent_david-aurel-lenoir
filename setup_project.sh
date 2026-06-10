@@ -13,3 +13,19 @@ then
 	    echo "You did not type a name! Stopping."
 	        exit
 fi
+
+# this is the folder name
+folder="attendance_tracker_$input"
+ 
+# this function runs if they press Ctrl+C
+function clean_up {
+	    echo ""
+	        echo "You pressed Ctrl+C Saving and cleaning up"
+		    tar -czf "$folder"_archive "$folder"
+		        rm -rf "$folder"
+			    echo "Done. Saved to "$folder"_archive"
+			        exit
+			}
+		 
+		# tell the script to use my function when Ctrl+C is pressed
+		trap clean_up SIGINT

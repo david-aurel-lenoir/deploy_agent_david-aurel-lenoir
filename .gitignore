@@ -1,0 +1,18 @@
+# The application directory is generated at runtime by setup_project.sh.
+# It must NOT be committed — only setup_project.sh should be tracked.
+attendance_tracker_*/
+ 
+# Archives produced by the Ctrl+C trap.
+attendance_tracker_*_archive.tar.gz
+*.tar.gz
+ 
+# Stray copies of the generated source files, if you keep them locally.
+attendance_checker.py
+assets.csv
+config.json
+reports.log
+ 
+# OS / editor noise
+.DS_Store
+*.swp
+ 

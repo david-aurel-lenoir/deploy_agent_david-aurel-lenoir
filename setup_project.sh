@@ -84,3 +84,13 @@ def run_attendance_check():
 if __name__ == "__main__":
     run_attendance_check()
 END
+
+# makes the assets.csv file
+echo "Making the assets.csv file..."
+cat > "$folder/Helpers/assets.csv" << 'END'
+Email,Names,Attendance Count,Absence Count
+alice@example.com,Alice Johnson,14,1
+bob@example.com,Bob Smith,7,8
+charlie@example.com,Charlie Davis,4,11
+diana@example.com,Diana Prince,15,0
+END

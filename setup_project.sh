@@ -29,3 +29,9 @@ function clean_up {
 		 
 		# tell the script to use my function when Ctrl+C is pressed
 		trap clean_up SIGINT
+
+# make the folders
+echo "Making the folders"
+mkdir "$folder"
+mkdir "$folder/Helpers"
+mkdir "$folder/reports"

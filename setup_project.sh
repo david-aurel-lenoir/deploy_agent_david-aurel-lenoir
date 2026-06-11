@@ -115,3 +115,31 @@ cat > "$folder/reports/reports.log" << 'END'
 [2026-02-06 18:10:01.469363] ALERT SENT TO bob@example.com: URGENT: Bob Smith, your attendance is 46.7%. You will fail this class.
 [2026-02-06 18:10:01.469424] ALERT SENT TO charlie@example.com: URGENT: Charlie Davis, your attendance is 26.7%. You will fail this class.
 END
+
+# ask for the threshold numbers
+echo "type the warning number:"
+read warning
+if [ "$warning" = "" ]
+then
+	    warning=75
+fi
+ 
+echo "type the failure number:"
+read failure
+if [ "$failure" = "" ]
+then
+	    failure=50
+fi
+ 
+# makes sure they are actually numbers
+if ! [[ "$warning" =~ ^[0-9]+$ ]]
+then
+	    echo "That is not a number. Stopping."
+	        exit
+fi
+if ! [[ "$failure" =~ ^[0-9]+$ ]]
+then
+	    echo "That is not a number Stopping."
+	        exit
+fi
+

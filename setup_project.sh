@@ -143,3 +143,9 @@ then
 	        exit
 fi
 
+# use sed to change the numbers in the config.json file
+echo "updating the config.json file"
+sed -i "s/\"warning\": 75/\"warning\": $warning/" "$folder/Helpers/config.json"
+sed -i "s/\"failure\": 50/\"failure\": $failure/" "$folder/Helpers/config.json"
+ 
+

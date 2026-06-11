@@ -3,8 +3,8 @@
 # This makes all the folders and files for me
  
 # ask the user for the name
-echo "Welcome to my project setup!"
-echo "Please type a name for your projec:"
+echo "Welcome to my project setup"
+echo "Please type a name for your project:"
 read input
  
 # check that they typed something
@@ -37,7 +37,7 @@ mkdir "$folder/Helpers"
 mkdir "$folder/reports"
 
 # makes the attendance_checker.py file
-echo "Making theendance_checker.py file"
+echo "Making the attendance_checker.py file"
 cat > "$folder/attendance_checker.py" << 'END'
 import csv
 import json
@@ -86,7 +86,7 @@ if __name__ == "__main__":
 END
 
 # makes the assets.csv file
-echo "Making the assets.csv file..."
+echo "Making the assets.csv file"
 cat > "$folder/Helpers/assets.csv" << 'END'
 Email,Names,Attendance Count,Absence Count
 alice@example.com,Alice Johnson,14,1

@@ -147,5 +147,16 @@ fi
 echo "updating the config.json file"
 sed -i "s/\"warning\": 75/\"warning\": $warning/" "$folder/Helpers/config.json"
 sed -i "s/\"failure\": 50/\"failure\": $failure/" "$folder/Helpers/config.json"
+
+# checks if python3 is installed on the local system
+echo "checking for python3"
+if command -v python3 > /dev/null
+then
+	    echo "python3 is installed"
+	        python3 --version
+	else
+		    echo "python3 is not installed"
+fi
  
+echo "Every thing is ok the project is ready"
 

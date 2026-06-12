@@ -24,3 +24,6 @@ when y'll do that, the script:
 2. it deletes the unfinished folder so it does not leave a half made folder behind
 
 so if you cancel the setup, you are left with a single clean backup file instead of a half made folder.
+
+# THE GOOGLE DRIVE LINK
+https://drive.google.com/file/d/1kI6NAl2UV_xRoU-iQ9kVFpbRbk8Pks63/view?usp=sharing
